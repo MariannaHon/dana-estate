@@ -3,21 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text: #0f171b;
+  --dark-blue: #02194f;
+  --blue: #0758b7;
+  --light-blue: #039cfc;
+  --light: #fcfcf7;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
+:root {
+  --font-family: "Raleway", sans-serif;
+  --second-family: "Source Sans Pro", sans-serif;
+  --third-family: "Merriweather", sans-serif;
 }
 
 @layer utilities {
