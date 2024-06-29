@@ -5,28 +5,30 @@ import SearchBox from '../SearchBox/SearchBox';
 import ToDetails from '../ToDetails/ToDetails';
 import css from './Offers.module.css'
 import ToCatalogue from "../ToCatalogue/ToCatalogue";
+import Search from "../Search/Search";
 
 const Offers = () => {
     return (
         <div>
             <h2>Hot offers</h2>
             <SearchBox />
+            <Search />
             <ul>
                 <li>
                     <Image src="/images/flat.jpg" alt="Flat with good view" width={624} height={448}/>
                     <div>
                         <h3>13D Akhmatova Anna St.</h3>
-                        <svg className={css.icon} width="40" height="40">
-                            <use href="./images/icons.svg#icon-fire"></use>
+                        <svg width="40" height="40">
+                            <use xlinkHref="./images/icons.svg#icon-fire"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-bed"></use>
+                            <use xlinkHref="./images/icons.svg#icon-bed"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-chair"></use>
+                            <use xlinkHref="./images/icons.svg#icon-chair"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-bath"></use>
+                            <use xlinkHref="./images/icons.svg#icon-bath"></use>
                         </svg>
                         <p>80m2</p>
                         <p>From € 200,000</p>
@@ -38,19 +40,19 @@ const Offers = () => {
                     <div>
                         <h3>4B Staronavodnytska St.</h3>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-fire"></use>
+                            <use xlinkHref="./images/icons.svg#icon-fire"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-bed"></use>
+                            <use xlinkHref="./images/icons.svg#icon-bed"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-chair"></use>
+                            <use xlinkHref="./images/icons.svg#icon-chair"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-bath"></use>
+                            <use xlinkHref="./images/icons.svg#icon-bath"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-swim"></use>
+                            <use xlinkHref="./images/icons.svg#icon-swim"></use>
                         </svg>
                         <p>80m2</p>
                         <p>From €185,000</p>
@@ -62,16 +64,16 @@ const Offers = () => {
                     <div>
                         <h3>40B Revutskoho St.</h3>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-fire"></use>
+                            <use xlinkHref="./images/icons.svg#icon-fire"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-bed"></use>
+                            <use xlinkHref="./images/icons.svg#icon-bed"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-chair"></use>
+                            <use xlinkHref="./images/icons.svg#icon-chair"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-bath"></use>
+                            <use xlinkHref="./images/icons.svg#icon-bath"></use>
                         </svg>
                         <p>80m2</p>
                         <p>From €215,000</p>
@@ -83,19 +85,19 @@ const Offers = () => {
                     <div>
                         <h3>11A Berestetska St.</h3>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-fire"></use>
+                            <use xlinkHref="./images/icons.svg#icon-fire"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-bed"></use>
+                            <use xlinkHref="./images/icons.svg#icon-bed"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-chair"></use>
+                            <use xlinkHref="./images/icons.svg#icon-chair"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-bath"></use>
+                            <use xlinkHref="./images/icons.svg#icon-bath"></use>
                         </svg>
                         <svg width="40" height="40">
-                            <use href="./images/icons.svg#icon-swim"></use>
+                            <use xlinkHref="./images/icons.svg#icon-swim"></use>
                         </svg>
                         <p>80m2</p>
                         <p>From €210,000</p>
