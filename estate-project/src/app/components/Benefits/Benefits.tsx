@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Benefits = () => {
     return (
-        <div>
+        <section id='benefits'>
             <h2>Our benefits</h2>
             <div>
                 <table>
@@ -84,7 +84,7 @@ const Benefits = () => {
                     </tbody>
                 </table>
             </div>
-        </div>
+        </section>
     )
 }
 

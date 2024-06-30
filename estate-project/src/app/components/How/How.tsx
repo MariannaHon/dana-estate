@@ -3,7 +3,7 @@ import Call from '../Call/Call'
 
 const How = () => {
     return (
-        <div>
+        <section id='how'>
             <h2>How it works</h2>
             <div>
                 <svg width="40" height="40">
@@ -39,7 +39,7 @@ const How = () => {
                 <p>Preparation of documents: We will prepare all the necessary documents for the transaction and ensure that they are properly executed.</p>
             </div>
             <Call/>
-        </div>
+        </section>
     )
 }
 

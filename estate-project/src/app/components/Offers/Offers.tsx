@@ -5,14 +5,12 @@ import SearchBox from '../SearchBox/SearchBox';
 import ToDetails from '../ToDetails/ToDetails';
 import css from './Offers.module.css'
 import ToCatalogue from "../ToCatalogue/ToCatalogue";
-import Search from "../Search/Search";
 
 const Offers = () => {
     return (
         <div>
             <h2>Hot offers</h2>
             <SearchBox />
-            <Search />
             <ul>
                 <li>
                     <Image src="/images/flat.jpg" alt="Flat with good view" width={624} height={448}/>

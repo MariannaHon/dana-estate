@@ -6,8 +6,8 @@ import ToCatalogue from '../ToCatalogue/ToCatalogue'
 
 const Hero = () => {
     return (
-    <div>
-        <div className={css.hero}>
+    <section>
+        <div id='hero' className={css.hero}>
                 <h1>Explore a real estate market in Warsaw</h1>
                 <p>We will help you find the property of your dreams</p>
                 <ToCatalogue/>
@@ -30,7 +30,7 @@ const Hero = () => {
                     </tbody>
                 </table>
         </div>
-    </div>
+    </section>
     )
 }
 

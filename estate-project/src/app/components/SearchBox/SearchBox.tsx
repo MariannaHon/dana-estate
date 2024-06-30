@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Search from '../Search/Search'
 
 const SearchBox = () => {
     return (
@@ -13,6 +14,7 @@ const SearchBox = () => {
             <svg width="40" height="40">
                 <use xlinkHref="/images/icons.svg#icon-arrow"></use>
             </svg>
+            <Search />
         </div>
     )
 }
