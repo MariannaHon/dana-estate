@@ -1,4 +1,8 @@
 
 .footer {
-    background-color: blue;
+    display: flex;
+    max-width: 1440px;
+    background-color: #02194f;
+    padding: 100px 84px;
+    margin: 0 auto;
 }

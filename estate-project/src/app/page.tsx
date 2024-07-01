@@ -9,11 +9,13 @@ import Feedback from "./components/Feedback/Feedback";
 import Footer from "./components/Footer/Footer";
 import Layout from "./components/Layout/Layout";
 
+import css from './page.module.css';
+
 
 export default function Home() {
   return (
     <Layout>
-      <main>
+      <main className={css.main}>
           <Hero />
           <About />
           <Benefits />
@@ -23,7 +25,6 @@ export default function Home() {
           <InTouch />
           <Feedback />
       </main>
-      <Footer />
     </Layout>
   );
 }

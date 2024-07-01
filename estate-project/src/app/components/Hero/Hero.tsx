@@ -6,29 +6,29 @@ import ToCatalogue from '../ToCatalogue/ToCatalogue'
 
 const Hero = () => {
     return (
-    <section>
+    <section className={css.section}>
         <div id='hero' className={css.hero}>
-                <h1>Explore a real estate market in Warsaw</h1>
-                <p>We will help you find the property of your dreams</p>
+            <div className={css.text}>
+                <h1 className={css.title}>Explore a real estate market in Warsaw</h1>
+                <p className={css.paragraph}>We will help you find the property of your dreams</p>
                 <ToCatalogue/>
+            </div>
         </div>
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>5+</th>
-                            <th>900+</th>
-                            <th>2000+</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Years on the market</td>
-                            <td>Satisfied customers</td>
-                            <td>Successfully completed cases</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div className={css.wrapper}>
+            <ul className={css.list}>
+                <li className={css.item}>
+                    <h4 className={css.bold}>5+</h4>
+                    <p className={css.thin}>Years on the market</p>
+                </li>
+                <li className={css.item}>
+                    <h4 className={css.bold}>900+</h4>
+                    <p className={css.thin}>Satisfied customers</p>
+                </li>
+                <li className={css.item}>
+                    <h4 className={css.bold}>2000+</h4>
+                    <p className={css.thin}>Successfully completed cases</p>
+                </li>
+            </ul>
         </div>
     </section>
     )

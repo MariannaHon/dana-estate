@@ -1,11 +1,12 @@
 'use client'
 
-import React from 'react'
+import React from 'react';
+import css from './ToCatalogue.module.css'
 
 const ToCatalogue = () => {
     return (
     <div>
-        <button>Browse catalogue</button>
+        <button className={css.btn}>Browse catalogue</button>
     </div>
     )
 }
