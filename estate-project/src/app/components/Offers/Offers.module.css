@@ -1,1 +1,147 @@
 
+.section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: "Merriweather", sans-serif;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 1272px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #0f171b;
+    border-radius: 12px;
+    padding: 24px;
+    width: 624px;
+    height: 448px;
+}
+
+.first {
+    background: linear-gradient(180deg, #fcfcf7 5%, rgba(252, 252, 247, 0) 50%, #fcfcf7 95%), url("/images/flat.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.second {
+    background: linear-gradient(180deg, #fcfcf7 5%, rgba(252, 252, 247, 0) 50%, #fcfcf7 95%), url("/images/flat2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.third {
+    background: linear-gradient(180deg, #fcfcf7 5%, rgba(252, 252, 247, 0) 50%, #fcfcf7 95%), url("/images/flat3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fourth {
+    background: linear-gradient(180deg, #fcfcf7 5%, rgba(252, 252, 247, 0) 50%, #fcfcf7 95%), url("/images/flat4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 471px;
+    height: 312px;
+    margin-right: 16px;
+    gap: 4px;
+}
+
+.subtitle {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.block {
+    display: flex;
+    gap: 8px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    fill: #02194F;
+}
+
+.number {
+    font-size: 32px;
+    color: #000;
+}
+
+.right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 89px;
+    gap: 17px;
+}
+
+.fire {
+    width: 40px;
+    height: 40px;
+    fill: #9A0404;
+}
+
+.text {
+    font-size: 32px;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.special {
+    width: 377px;
+}

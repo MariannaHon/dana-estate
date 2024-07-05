@@ -1,3 +1,4 @@
+import classNames from "classnames";
 
 import Image from "next/image";
 import React from 'react'
@@ -7,104 +8,183 @@ import css from './Offers.module.css'
 import ToCatalogue from "../ToCatalogue/ToCatalogue";
 
 const Offers = () => {
+
+    const first = classNames(css.item, css.first);
+    const second = classNames(css.item, css.second);
+    const third = classNames(css.item, css.third);
+    const fourth = classNames(css.item, css.fourth);
+    const paragraph = classNames(css.text, css.special);
+
     return (
-        <div>
-            <h2>Hot offers</h2>
+        <section className={css.section}>
+            <h2 className={css.title}>Hot offers</h2>
             <SearchBox />
-            <ul>
-                <li>
-                    <Image src="/images/flat.jpg" alt="Flat with good view" width={624} height={448}/>
-                    <div>
-                        <h3>13D Akhmatova Anna St.</h3>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-fire"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-bed"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-chair"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-bath"></use>
-                        </svg>
-                        <p>80m2</p>
-                        <p>From € 200,000</p>
+            <div className={css.container}>
+                <ul className={css.list}>
+                <li className={first}>
+                    <div className={css.wrapper}>
+                        <div className={css.left}>
+                            <h3 className={css.subtitle}>13D Akhmatova Anna St.</h3>
+                            <div className={css.icons}>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-bed"></use>
+                                    </svg>
+                                    <p className={css.number}>2</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-chair"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-bath"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={css.right}>
+                            <svg className={css.fire} width="40" height="40">
+                                <use xlinkHref="./images/icons.svg#icon-fire"></use>
+                            </svg>
+                            <p className={css.text}>80m2</p>
+                        </div>
+                    </div>
+                    <div className={css.bottom}>
+                        <p className={paragraph}>From € 200,000</p>
                         <ToDetails/>
                     </div>
                 </li>
-                <li>
-                    <Image src="/images/flat2.jpg" alt="Flat with plants" width={624} height={448}/>
-                    <div>
-                        <h3>4B Staronavodnytska St.</h3>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-fire"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-bed"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-chair"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-bath"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-swim"></use>
-                        </svg>
-                        <p>80m2</p>
-                        <p>From €185,000</p>
+                <li className={second}>
+                    <div className={css.wrapper}>
+                        <div className={css.left}>
+                            <h3 className={css.subtitle}>4B Staronavodnytska St.</h3>
+                            <div className={css.icons}>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-bed"></use>
+                                    </svg>
+                                    <p className={css.number}>2</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-chair"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-bath"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-swim"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={css.right}>
+                            <svg className={css.fire} width="40" height="40">
+                                <use xlinkHref="./images/icons.svg#icon-fire"></use>
+                            </svg>
+                            <p className={css.text}>80m2</p>
+                        </div>
+                    </div>
+                    <div className={css.bottom}>
+                        <p className={paragraph}>From €185,000</p>
                         <ToDetails/>
                     </div>
                 </li>
-                <li>
-                    <Image src="/images/flat3.jpg" alt="Flat with red chair" width={624} height={448}/>
-                    <div>
-                        <h3>40B Revutskoho St.</h3>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-fire"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-bed"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-chair"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-bath"></use>
-                        </svg>
-                        <p>80m2</p>
-                        <p>From €215,000</p>
+                <li className={third}>
+                    <div className={css.wrapper}>
+                        <div className={css.left}>
+                            <h3 className={css.subtitle}>40B Revutskoho St.</h3>
+                            <div className={css.icons}>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-bed"></use>
+                                    </svg>
+                                    <p className={css.number}>2</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-chair"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-bath"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={css.right}>
+                            <svg className={css.fire} width="40" height="40">
+                                <use xlinkHref="./images/icons.svg#icon-fire"></use>
+                            </svg>
+                            <p className={css.text}>80m2</p>
+                        </div>
+                    </div>
+                    <div className={css.bottom}>
+                        <p className={paragraph}>From €215,000</p>
                         <ToDetails/>
                     </div>
                 </li>
-                <li>
-                    <Image src="/images/flat4.jpg" alt="Flat with TV" width={624} height={448}/>
-                    <div>
-                        <h3>11A Berestetska St.</h3>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-fire"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-bed"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-chair"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-bath"></use>
-                        </svg>
-                        <svg width="40" height="40">
-                            <use xlinkHref="./images/icons.svg#icon-swim"></use>
-                        </svg>
-                        <p>80m2</p>
-                        <p>From €210,000</p>
+                <li className={fourth}>
+                    <div className={css.wrapper}>
+                        <div className={css.left}>
+                            <h3 className={css.subtitle}>11A Berestetska St.</h3>
+                            <div className={css.icons}>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-bed"></use>
+                                    </svg>
+                                    <p className={css.number}>2</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-chair"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-bath"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                                <div className={css.block}>
+                                    <svg className={css.icon} width="40" height="40">
+                                        <use xlinkHref="./images/icons.svg#icon-swim"></use>
+                                    </svg>
+                                    <p className={css.number}>1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={css.right}>
+                            <svg className={css.fire} width="40" height="40">
+                                <use xlinkHref="./images/icons.svg#icon-fire"></use>
+                            </svg>
+                            <p className={css.text}>80m2</p>
+                        </div>
+                    </div>
+                    <div className={css.bottom}>
+                        <p className={paragraph}>From €210,000</p>
                         <ToDetails/>
                     </div>
                 </li>
             </ul>
             <ToCatalogue/>
-        </div>
+            </div>
+        </section>
     )
 }
 

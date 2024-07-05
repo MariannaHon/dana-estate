@@ -9,6 +9,9 @@
 }
 
 .container {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
     width: 708px;
     height: 536px;
     margin-right: 24px;
@@ -22,14 +25,13 @@
     gap: 48px;
     width: 624px;
     height: 536px;
+    margin-right: 84px;
 }
 
 .title {
     font-family: "Merriweather", sans-serif;
-    font-weight: 400;
     font-size: 64px;
     text-align: center;
-    color: #0f171b;
 }
 
 .text {

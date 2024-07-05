@@ -8,7 +8,7 @@ const About: React.FC = () => {
     return (
     <section className={css.section} id='about'>
         <div className={css.container}>
-            <Image 
+            <Image className={css.img}
                     src="/images/picture.jpg" width={708} height={536} alt="Small house">
             </Image>
         </div>

@@ -1,0 +1,50 @@
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    width: 1272px;
+    height: 64px;
+    margin-bottom: 24px;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1164px;
+    height: 64px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #0f171b;
+    border-radius: 12px;
+    padding: 12px 24px;
+    width: 1164px;
+    height: 64px;
+    background: #fcfcf7;
+}
+
+.input::placeholder {
+    color: #616161;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.icon {
+    position: absolute;
+    left: 1120px;
+    top: 22px;
+    width: 20px;
+    height: 20px;
+
+}
