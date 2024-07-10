@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import css from './Call.module.css';
 
 const Call = () => {
     return (
         <div>
-            <button>Order a call</button>
+            <button className={css.btn}>Order a call</button>
         </div>
     )
 }

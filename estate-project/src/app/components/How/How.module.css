@@ -20,6 +20,7 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: 40px;
 }
 
 .item {
@@ -63,11 +64,50 @@
 
 .wrapper {
     display: flex;
-    gap: 105px;
+    gap: 95px;
 }
 
 .arrow {
     width: 157px;
     height: 346px;
     fill: #02194F;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 840px;
+    gap: 24px;
+
+    font-size: 18px;
+}
+
+.last {
+    margin-left: 252px;
+}
+
+.stepOne {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 650px;
+    padding: 8px 0;
+}
+
+.stepTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    width: 650px;
+    margin-left: 100px;
+}
+
+.stepThree {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    width: 650px;
+    margin-left: 216px;
 }
