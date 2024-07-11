@@ -5,6 +5,8 @@ import { ThunkDispatch } from '@reduxjs/toolkit';
 import { UseDispatch } from 'react-redux';
 import { Formik, FormikHelpers, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import Image from "next/image";
+import css from './InTouch.module.css'
 
 
 const InTouch = () => {
@@ -31,8 +33,9 @@ const InTouch = () => {
     // };
 
     return (
-        <section id='contacts'>
-            <h2>Get in touch</h2>
+        <section className={css.section} id='contacts'>
+            <div className={css.container}>
+                <h2 className={css.title}>Get in touch</h2>
             {/* <Formik
                 initialValues={initialValues}
                 validationSchema={Validator}
@@ -53,6 +56,12 @@ const InTouch = () => {
                     <button type="submit">Send</button>
                 </Form>
             </Formik> */}
+            </div>
+            <div>
+                <Image className={css.img}
+                    src="/images/keys.jpg" width={708} height={536} alt="Keys in hand">
+                </Image>
+            </div>
         </section>
     )
 }

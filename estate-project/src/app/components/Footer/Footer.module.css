@@ -1,8 +1,118 @@
 
 .footer {
     display: flex;
-    max-width: 1440px;
-    background-color: #02194f;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
     padding: 100px 84px;
+    max-width: 1440px;
+    background: #02194f;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1272px;
+    margin-bottom: 80px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    width: 300px;
+    height: 456px;
+    margin-right: 132px;
+}
+
+.logo {
+    width: 270px;
+    height: 274px;
+    fill: #FCFCF7;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 192px;
+
+    font-weight: 500;
+    font-size: 20px;
+    color: #fcfcf7;
+}
+
+.last {
+    width: 408px;
+    padding: 8px;
+}
+
+.link {
+    padding: 8px;
+}
+
+.follow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #fcfcf7;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    fill: #FCFCF7;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    padding: 0px 324px;
     margin: 0 auto;
+
+    font-size: 18px;
+    text-align: right;
+    color: #fcfcf7;
 }

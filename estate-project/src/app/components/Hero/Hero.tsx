@@ -1,6 +1,5 @@
 
 import React from 'react'
-import Image from "next/image";
 import css from './Hero.module.css';
 import ToCatalogue from '../ToCatalogue/ToCatalogue'
 
