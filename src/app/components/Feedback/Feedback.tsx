@@ -1,17 +1,20 @@
+'use client'
 
 import React from 'react'
 import { AnyAction } from 'redux';
 import { ThunkDispatch } from '@reduxjs/toolkit';
-import { UseDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { AppDispatch } from '@/redux/store';
 import { Formik, FormikHelpers, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import Image from "next/image";
+import Send from '../Send/Send'
 
 import css from './Feedback.module.css';
 
 const Feedback = () => {
 
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch<AppDispatch>();
 
     const Validator = Yup.object().shape({
         name: Yup.string().min(2, "Too Short!").max(15, "Too Long!").required("Required"),
@@ -27,10 +30,10 @@ const Feedback = () => {
         feedback: '',
     }
 
-    // const handleSubmit = (values:string, actions:string) => {
-    //     dispatch((values));
-    //     actions.resetForm();
-    // };
+    const handleSubmit = (values, actions) => {
+        dispatch((values));
+        actions.resetForm();
+    };
 
     return (
         <section className={css.section}>
@@ -63,26 +66,31 @@ const Feedback = () => {
                         </div>
                     </div>
                     
-                    {/* <Formik
+                    <Formik
                         initialValues={initialValues}
                         validationSchema={Validator}
                         onSubmit={handleSubmit}>
-                        <Form>
-                            <Field type="text" name="name" placeholder="Name" />
-                            <ErrorMessage name="name" component="div" />
+                            <Form className={css.form}>
+                            <ErrorMessage className={css.error} name="name" component="div" />
+                            <Field className={css.input} type="text" name="name" placeholder="Name" />
                             
-                            <Field type="email" name="email" placeholder="Email or phone number" />
-                            <ErrorMessage name="email" component="div" />
-
-                            <Field type="text" name="theme" />
-                            <ErrorMessage name="theme" component="div" />
-
-                            <Field type="text" name="feedback" />
-                            <ErrorMessage name="feedback" component="div" />
-
-                            <button type="submit">Send</button>
+                            <ErrorMessage className={css.error} name="email" component="div" />
+                            <Field className={css.input} type="email" name="email" placeholder="Email or phone number" />
+                            
+                            <ErrorMessage className={css.error} name="theme" component="div" />
+                            <Field className={css.input} type="text" list="options" name="theme" placeholder="Theme" />
+                            <datalist id='options'>
+                                    <option value="some text" />
+                                    <option value="some text" />
+                                    <option value="some text" />
+                            </datalist>
+                            
+                            <ErrorMessage className={css.error} name="additional" component="div" />
+                            <Field className={css.input} type="text" name="additional" placeholder="Additional information..." />
+                            
+                            <Send/>
                         </Form>
-                    </Formik> */}
+                    </Formik>
                 </div>
             </div>
         </section>

@@ -61,3 +61,42 @@
     stroke-width: 3px;
     fill: none;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #0f171b;
+    border-radius: 12px;
+    padding: 12px 24px;
+    width: 624px;
+    height: 64px;
+    background: #fcfcf7;
+    margin-bottom: 16px;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #616161;
+}
+
+.input[list='options'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px 24px;
+    width: 624px;
+}
+
+.error {
+    color: red;
+}
